@@ -3,6 +3,9 @@
 A Python-based terminal video player that converts videos to ASCII art and plays them directly in your terminal. This project transforms regular video files into text-based animations using ASCII characters.
 
 ## Preview
+<video width="320" height="240" controls>
+  <source src="./demo.mp4" type="video/mp4">
+</video>
 
 ## Requirements
 
@@ -30,7 +33,7 @@ pip install -r requirements.txt
 Run the script with a video file as an argument:
 
 ```bash
-python ascii_video_player.py [video_file]
+python pixglyph.py [video_file]
 ```
 
 If no video file is specified, it will default to `video.mp4` in the current directory.
@@ -39,10 +42,10 @@ If no video file is specified, it will default to `video.mp4` in the current dir
 
 ```bash
 # Play the default video
-python ascii_video_player.py
+python pixglyph.py
 
 # Play a specific video
-python ascii_video_player.py your_video.mp4
+python pixglyph.py your_video.mp4
 ```
 
 ### Controls
@@ -60,41 +63,3 @@ The ASCII Video Player works through several key steps:
 5. **Frame Interpolation**: Creates intermediate frames for smoother playback
 6. **Terminal Display**: Clears the terminal and displays each ASCII frame
 
-## Project Structure
-
-```
-ascii-video-player/
-├── ascii_video_player.py  # Main script
-├── requirements.txt       # Project dependencies
-├── video.mp4              # Default video file
-├── shot.png               # Preview screenshot 1
-├── shot1.png              # Preview screenshot 2
-└── ascii_frames/          # Directory for storing ASCII frames (if used)
-```
-
-## Technical Details
-
-### ASCII Conversion
-
-The conversion from image to ASCII uses a character set from light to dark:
-```
-"    :;;##"
-```
-
-Each pixel's brightness determines which character is used, creating a text representation of the image.
-
-### Frame Interpolation
-
-To achieve smoother playback, the player can generate intermediate frames between actual video frames. This is controlled by the `interpolation_factor` parameter, with higher values creating more intermediate frames.
-
-## Limitations
-
-- Terminal size affects the quality of the ASCII art
-- Performance depends on your system's capabilities
-- Very fast-moving scenes may appear blurry in ASCII
-
-
-## Acknowledgments
-
-- This project uses OpenCV for video processing
-- Pillow (PIL) is used for image manipulation
