@@ -1,22 +1,8 @@
-# ASCII Video Player
+# Pixglyph
 
-A Python-based terminal video player that converts videos to ASCII art and plays them directly in your terminal. This project transforms regular video files into text-based animations using ASCII characters, creating a unique retro-style viewing experience.
+A Python-based terminal video player that converts videos to ASCII art and plays them directly in your terminal. This project transforms regular video files into text-based animations using ASCII characters.
 
 ## Preview
-
-Here are some screenshots of the ASCII Video Player in action:
-
-![ASCII Video Player Screenshot 1](shot.png)
-
-![ASCII Video Player Screenshot 2](shot1.png)
-
-## Features
-
-- **Video to ASCII Conversion**: Converts video frames to ASCII art in real-time
-- **Frame Interpolation**: Uses frame interpolation for smoother playback
-- **Terminal Playback**: Displays ASCII video directly in your terminal
-- **Cross-Platform Support**: Works on Windows, macOS, and Linux
-- **Customizable Output**: Adjustable width and playback duration
 
 ## Requirements
 
@@ -29,8 +15,8 @@ Here are some screenshots of the ASCII Video Player in action:
 1. Clone this repository or download the source code:
 
 ```bash
-git clone https://github.com/Romeo509/ascii-video-player.git
-cd ascii-video-player
+git clone https://github.com/Estifanos12/pixglyph.git
+cd pixglyph
 ```
 
 2. Install the required dependencies:
