@@ -3,7 +3,7 @@
 A Python-based terminal video player that converts videos to ASCII art and plays them directly in your terminal. This project transforms regular video files into text-based animations using ASCII characters.
 
 ## Preview
-![demo](https://github.com/user-attachments/assets/72801f70-84ac-43ae-8403-6ac293bbf722)
+![demo-vid](https://github.com/user-attachments/assets/6833e881-991a-4ca0-ab2e-54c38eafc637)
 
 ## Requirements
 
@@ -60,6 +60,7 @@ The ASCII Video Player works through several key steps:
 4. **ASCII Conversion**: Maps pixel brightness values to ASCII characters
 5. **Frame Interpolation**: Creates intermediate frames for smoother playback
 6. **Terminal Display**: Clears the terminal and displays each ASCII frame
+
 
 
 
